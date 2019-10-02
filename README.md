@@ -13,7 +13,7 @@ Un dossier sera cree dans le repertoire courant avec les fichiers du projet.
 ### Sommaire
 Vous trouverez dans le dossier plusieurs elements:
 
--srcs/
+-srcs/ (en\ savoir\ +[https://github.com/wendrul/spdprintf/blob/master/README.md#sommaire])
 -include/
 -Makefile
 -main.c
