@@ -6,18 +6,20 @@ Ici vous pourrez voir comment faire marcher et ce que fait chaque fichier du pro
 #### INSTALLATION
 Pour telecharger le dossier de projet present dans ce site il suffit d'executer la commande:
 
-``git clone http://github.com/Wendrul/spdprintf``
+``git clone http://github.com/wendrul/spdprintf``
 
 Un dossier sera cree dans le repertoire courant avec les fichiers du projet.
 
-### Sommaire
+## Sommaire
 Vous trouverez dans le dossier plusieurs elements:
 
--srcs/ ([en\ savoir\ +](https://github.com/wendrul/spdprintf/blob/master/README.md#sommaire]))
--include/
--Makefile
--main.c
+-[srcs/](https://github.com/wendrul/spdprintf/blob/master/README.md#srcs]))\n
+-[include/](https://github.com/wendrul/spdprintf/blob/master/README.md#sinclude)\n
+-[Makefile](https://github.com/wendrul/spdprintf/blob/master/README.md#Makefile)\n
+-[main.c](https://github.com/wendrul/spdprintf/blob/master/README.md#main.c)\n
 
 Ce document couvre aussi:
 
--To Do List[]
+-To do list[ ]\n
+-Compilation du projet[ ]\
+-
