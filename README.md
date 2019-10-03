@@ -59,9 +59,9 @@ Il permet de faire plusieures choses:
 
 ### To Do List
 
-[x] Faire le repo github.
+- [x] Faire le repo github.
 
-[ ] Gerer le nombre [variable](https://stackoverflow.com/questions/2433295/how-does-printf-handle-its-arguments) d'arguments
+- [ ] Gerer le nombre [variable](https://stackoverflow.com/questions/2433295/how-does-printf-handle-its-arguments) d'arguments
 
 
 
