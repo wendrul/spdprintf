@@ -1,6 +1,6 @@
 # spdprintf ENSEA
 
-Voici le dossier contenant le projet printf pour l'ensea.
+ Voici le dossier contenant le projet printf pour l'ensea.
 Ici vous pourrez voir comment faire marcher et ce que fait chaque fichier du projet.
 
 #### INSTALLATION
