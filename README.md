@@ -13,19 +13,15 @@ Un dossier sera cree dans le repertoire courant avec les fichiers du projet.
 ## Sommaire
 Vous trouverez dans le dossier plusieurs elements:
 
--[srcs/](https://github.com/wendrul/spdprintf/blob/master/README.md#srcs])
-
--[include/](https://github.com/wendrul/spdprintf/blob/master/README.md#include)
-
--[Makefile et Compilation du projet](https://github.com/wendrul/spdprintf/blob/master/README.md#Makefile)
-
--[main.c](https://github.com/wendrul/spdprintf/blob/master/README.md#main.c)
+- [srcs/](https://github.com/wendrul/spdprintf/blob/master/README.md#srcs])
+- [include/](https://github.com/wendrul/spdprintf/blob/master/README.md#include)
+- [Makefile et Compilation du projet](https://github.com/wendrul/spdprintf/blob/master/README.md#Makefile)
+- [main.c](https://github.com/wendrul/spdprintf/blob/master/README.md#main.c)
 
 Ce document contient aussi:
 
--[To do List](https://github.com/wendrul/spdprintf/blob/master/README.md#To_Do_List)
-
--[Ressources](https://github.com/wendrul/spdprintf/blob/master/README.md#Ressources)
+- [To do List](https://github.com/wendrul/spdprintf/blob/master/README.md#To_Do_List)
+- [Ressources](https://github.com/wendrul/spdprintf/blob/master/README.md#Ressources)
 
 ## Composition du dossier de projet
 
@@ -54,6 +50,18 @@ Il permet de faire plusieures choses:
 
 ``make re``: execute `make fclean` puis `make all` pour recompiler le projet a partir de 0.
 
+### main.c
+
+Le fichier main.c dans ce repos restera toujours vide, i.e.
+
+```c
+#include "main.h"
+
+int	main(void)
+{
+	return (0);
+}
+```
 
 ## Deroulement du projet
 
@@ -62,6 +70,12 @@ Il permet de faire plusieures choses:
 - [x] Faire le repo github.
 
 - [ ] Gerer le nombre [variable](https://stackoverflow.com/questions/2433295/how-does-printf-handle-its-arguments) d'arguments
+
+### Ressources
+
+- Nombre variable d'arguments
+  - [Exemple d'utilisation de stdargs.h](https://stackoverflow.com/questions/2433295/how-does-printf-handle-its-arguments)
+  - [Elipsis](https://en.wikipedia.org/wiki/Ellipsis_(computer_programming))
 
 
 
