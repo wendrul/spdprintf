@@ -20,7 +20,8 @@ Vous trouverez dans le dossier plusieurs elements:
 
 Ce document contient aussi:
 
-- [To do List](https://github.com/wendrul/spdprintf/blob/master/README.md#To_Do_List)
+- [To do List](https://github.com/wendrul/spdprintf/blob/master/README.md#To-Do-List)
+- [Fichiers header (.h)](https://github.com/wendrul/spdprintf/blob/master/README.md#headers)
 - [Ressources](https://github.com/wendrul/spdprintf/blob/master/README.md#Ressources)
 
 ## Composition du dossier de projet
@@ -69,7 +70,40 @@ int	main(void)
 
 - [x] Faire le repo github.
 
-- [ ] Gerer le nombre [variable](https://stackoverflow.com/questions/2433295/how-does-printf-handle-its-arguments) d'arguments
+- [ ] Gerer le [nombre variable d'arguments](https://stackoverflow.com/questions/2433295/how-does-printf-handle-its-arguments).
+
+- [ ]  [Liste de fonctions a coder](https://github.com/wendrul/spdprintf/blob/master/README.md#fonctions)
+
+### Headers
+
+Ce projet comportera plusieurs fichiers header pour bien gerer l'organisation du projet, donc a difference de ceux vus en cours, il y a certaines specificites a prendre en compte.
+
+Voici le format d'un fichier .h:
+```c
+#ifndef NOMDUFICHIER_H		// Ceci est une protection contre la "double inclusion"
+# define NOMDUFICHIER_H
+
+# include ...
+/*
+	ont met d'aboord tous les #include et #define
+*/
+
+typedef ...
+/*
+	Ensuite la defiition des typedef et des structures si il y en a
+*/
+
+/* Enfin on met l'ensemble des prototypes de fonctions par ex: */
+int	printf(const char format, ...);
+void	print_numbers(int nb);
+
+#endif
+```
+### Fonctions
+
+Voici les prototypes des fonctions a coder.
+
+- [ ] ```c
 
 ### Ressources
 

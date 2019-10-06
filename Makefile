@@ -1,4 +1,5 @@
 SRCS	=	srcs/*.c
+		main.c
 
 OBJS	=	${SRCS:.c=.o}
 
