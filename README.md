@@ -60,9 +60,14 @@ Le fichier main.c dans ce repos restera toujours vide, i.e.
 
 int	main(void)
 {
+	/*
+        	==>TESTS <==
+	*/
 	return (0);
 }
 ```
+
+Pour tester il suffira de rajouter des tests dans ce fichier.
 
 ## Deroulement du projet
 
@@ -115,7 +120,7 @@ Voici les prototypes des fonctions a coder.
 - [ ] Ecrire en caracteres dans la base donnee un nombre passe en arguments a l'adresse donnee (char \*s): **H**
 
 ```c
-	void	ft_putnbr_base(long nb, char *base, char *s);	//par ex base = 0123456789abcdef
+	void	ft_putnbr_base(long nb, char *base, char *s);	//par ex base = "0123456789abcdef"
 ```
 - [ ] desc: **difficulte**
 ```c
