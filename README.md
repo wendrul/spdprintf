@@ -103,7 +103,24 @@ void	print_numbers(int nb);
 
 Voici les prototypes des fonctions a coder.
 
-- [ ] ```c
+- [ ] Afficher une chaine de characteres et retourner la longueur de celle ci: **E**
+```c
+	int	ft_putstr(char *str);
+```
+- [ ] Retourner la longueur d'une chaine de caracteres: **E**
+```c
+	int	ft_strlen(char *str);
+```
+
+- [ ] Ecrire en caracteres dans la base donnee un nombre passe en arguments a l'adresse donnee (char \*s): **H**
+
+```c
+	void	ft_putnbr_base(long nb, char *base, char *s);	//par ex base = 0123456789abcdef
+```
+- [ ] desc: **difficulte**
+```c
+	void f();
+```
 
 ### Ressources
 
