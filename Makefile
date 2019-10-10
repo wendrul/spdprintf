@@ -1,9 +1,9 @@
-SRCS	=	srcs/*.c
+SRCS	=	srcs/*.c\
 		main.c
 
 OBJS	=	${SRCS:.c=.o}
 
-INCLS	=	./includes/
+INCLS	=	include/
 
 NAME	=	printf_test
 
