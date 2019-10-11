@@ -138,6 +138,8 @@ Voici les prototypes des fonctions a coder.
 ```c
 	int	ft_strlen(char *str);
 ```
+
+
 - [ ] Afficher la representation decimale d'un nombre passe en argument: **plutot complexe**
 ```c
 	void	ft_putnbr(int nb);
@@ -145,6 +147,10 @@ Voici les prototypes des fonctions a coder.
   - [ ] Retourner la chaine de caracteres qui represente l'entier passe en arguments en decimal: **complexe**
 ```c
 	char	*ft_itoa(int nb);
+```
+  - [ ] cherche un caractere `to_find` dans la chaine de caracteres `str` et renvoie l'indice de sa premiere occurrence ou -1 si il ne le trouve pas: **semi-complexe**
+```c
+	int	ft_indexof(char to_find, char *str);
 ```
   - [ ] Afficehr sur la sortie standard la representation du nombre en entree `nb` dans la base `base`. Par exemple pour l'hexadecimal `base = "0123456789abcdef"` pour le binaire `base = "01"` etc... : **tres complexe**
 ```c
@@ -154,13 +160,19 @@ Voici les prototypes des fonctions a coder.
 ```c
 	char	*ft_itoa_base(int nb, char *base);
 ```
-- [ ] cherche un caractere `to_find` dans la chaine de caracteres `str` et renvoie l'indice de sa premiere occurrence ou -1 si il ne le trouve pas: **semi-complexe**
+
+- [ ] Lit une chaine de caracteres finalisee par un _whitespace_ commencant par `%` et verifie si c'est un format valide (i.e.: c'est un `%d`, `%x` elle retourne 1, si c'est `%lol` renvoie 0 car invalide): **simple**
 ```c
-	int	ft_indexof(char to_find, char *str);
+	int	ft_format_is_valid();
 ```
+- [ ] Verifie le format pour chercher combien d'arguments va prendre la fonction, c'est a dire compte le nombre de `%qqchose` valides (ex: `%d` `%c`): **complexe**
+```c
+	int	ft_count_args(char *format);
+```
+
 - [ ] desc: **difficulte**
 ```c
-	void f();
+	void	f();
 ```
 
 ### Ressources
