@@ -17,6 +17,7 @@ Vous trouverez dans le dossier plusieurs elements:
 - [include/](https://github.com/wendrul/spdprintf/blob/master/README.md#include)
 - [Makefile et Compilation du projet](https://github.com/wendrul/spdprintf/blob/master/README.md#Makefile)
 - [main.c](https://github.com/wendrul/spdprintf/blob/master/README.md#main.c)
+- [create](https://github.com/wendrul/spdprintf/blob/master/README.md#create)
 
 Ce document contient aussi:
 
@@ -67,7 +68,28 @@ int	main(void)
 }
 ```
 
-Pour tester il suffira de rajouter des tests dans ce fichier.
+Pour tester il suffira de rajouter des tests dans le main.
+
+### create
+
+Vous trouverez un fichier **create** qui est en fait un script bash permettant de creer les fichiers source et de mettre a jour le header. pour l'utiliser il suffit de faire comme suit:
+
+```bash
+$> ./create
+Write your file name (without file extension)
+$> nomDuFichier
+Succesfully createed nomDuFichier.c
+Succesfully Updated header.h
+```
+le script rajoute automatiquement l'extension.c, veuillez ne pas la rajouter, de meme que pour le prefixe ft\_
+~~``$>nomDuFichier.c``~~
+~~``$>ft_nomDuFichier``~~
+
+Une fois le fichier cree il faudra mettre a jour le prototype qui a ete ecrit dans le header:
+```c
+int	ft_nomDuFichier(/*Remplir les arguments et modifier le type de retour*/);
+```
+
 
 ## Deroulement du projet
 
@@ -108,19 +130,33 @@ void	print_numbers(int nb);
 
 Voici les prototypes des fonctions a coder.
 
-- [ ] Afficher une chaine de characteres et retourner la longueur de celle ci: **E**
+- [ ] Afficher une chaine de characteres et retourner la longueur de celle ci: **simple**
 ```c
 	int	ft_putstr(char *str);
 ```
-- [ ] Retourner la longueur d'une chaine de caracteres: **E**
+- [x] Retourner la longueur d'une chaine de caracteres: **simple**
 ```c
 	int	ft_strlen(char *str);
 ```
-
-- [ ] Ecrire en caracteres dans la base donnee un nombre passe en arguments a l'adresse donnee (char \*s): **H**
-
+- [ ] Afficher la representation decimale d'un nombre passe en argument: **plutot complexe**
+```c
+	void	ft_putnbr(int nb);
+```
+  - [ ] Retourner la chaine de caracteres qui represente l'entier passe en arguments en decimal: **complexe**
+```c
+	char	*ft_itoa(int nb);
+```
+  - [ ] Afficehr sur la sortie standard la representation du nombre en entree `nb` dans la base `base`. Par exemple pour l'hexadecimal `base = "0123456789abcdef"` pour le binaire `base = "01"` etc... : **tres complexe**
 ```c
 	void	ft_putnbr_base(long nb, char *base, char *s);	//par ex base = "0123456789abcdef"
+```
+  - [ ] Idem que pour la fonction precedente mais retourne la chaine de caracteres au lieu de l'afficher: **plus complexe encore**
+```c
+	char	*ft_itoa_base(int nb, char *base);
+```
+- [ ] cherche un caractere `to_find` dans la chaine de caracteres `str` et renvoie l'indice de sa premiere occurrence ou -1 si il ne le trouve pas: **semi-complexe**
+```c
+	int	ft_indexof(char to_find, char *str);
 ```
 - [ ] desc: **difficulte**
 ```c
