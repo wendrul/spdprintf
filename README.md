@@ -61,7 +61,7 @@ Il permet de faire plusieures choses:
 Le fichier main.c dans ce repos restera toujours vide, i.e.
 
 ```c
-#include "main.h"
+#include "header.h"
 
 int	main(void)
 {
