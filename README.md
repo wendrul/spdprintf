@@ -1,7 +1,11 @@
 # spdprintf ENSEA
 
  Voici le dossier contenant le projet printf pour l'ensea.
-Ici vous pourrez voir comment faire marcher et ce que fait chaque fichier du projet.
+Ici vous pourrez voir comment faire marcher et ce que fait chaque fichier du projet.\
+Le but de ce projet est de faire la fonction dont le prototype est le suivant:
+```c
+char	*spdprintf(const char* format, ...);
+```
 
 #### INSTALLATION
 Pour telecharger le dossier de projet present dans ce site il suffit d'executer la commande:
@@ -57,7 +61,7 @@ Il permet de faire plusieures choses:
 Le fichier main.c dans ce repos restera toujours vide, i.e.
 
 ```c
-#include "main.h"
+#include "header.h"
 
 int	main(void)
 {
@@ -130,6 +134,7 @@ void	print_numbers(int nb);
 
 Voici les prototypes des fonctions a coder.
 
+#### Traiter des chaines de caracteres
 - [ ] Afficher une chaine de characteres et retourner la longueur de celle ci: **simple**
 ```c
 	int	ft_putstr(char *str);
@@ -140,6 +145,8 @@ Voici les prototypes des fonctions a coder.
 ```
 
 
+
+#### Afficher des nombres:
 - [ ] Afficher la representation decimale d'un nombre passe en argument: **plutot complexe**
 ```c
 	void	ft_putnbr(int nb);
@@ -160,7 +167,7 @@ Voici les prototypes des fonctions a coder.
 ```c
 	char	*ft_itoa_base(int nb, char *base);
 ```
-
+#### Gerer l'argument de format
 - [ ] Lit une chaine de caracteres finalisee par un _whitespace_ commencant par `%` et verifie si c'est un format valide (i.e.: c'est un `%d`, `%x` elle retourne 1, si c'est `%lol` renvoie 0 car invalide): **simple**
 ```c
 	int	ft_format_is_valid();
@@ -169,7 +176,7 @@ Voici les prototypes des fonctions a coder.
 ```c
 	int	ft_count_args(char *format);
 ```
-
+#### ignorez
 - [ ] desc: **difficulte**
 ```c
 	void	f();
