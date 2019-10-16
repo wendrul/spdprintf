@@ -15,7 +15,7 @@ CC	=	gcc
 
 
 ${NAME}:	${OBJS}
-		${CC} ${FLAGS} ${OBJS} -o ${NAME}
+		${CC} ${CFLAGS} ${OBJS} -o ${NAME}
 
 all:		${NAME}
 
