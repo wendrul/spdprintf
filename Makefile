@@ -1,7 +1,10 @@
-SRCS	=	srcs/*.c \
+SRCS	=	srcs/strlen.c\
+		srcs/putstr.c\
+		srcs/format_is_valid.c\
+		srcs/count_args.c\
 		main.c
 
-OBJS	=	${SRCS:.c=.o}
+OBJS	=	$(patsubst %.c, %.o, $(SRCS))
 
 INCLS	=	include/
 

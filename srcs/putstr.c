@@ -1,6 +1,6 @@
 /*******************************************************************
 putstr source code
-ensea ensea  88 oct.  16 16:17 putstr.c
+bryan 88 oct.  16 16:17 putstr.c
 *******************************************************************/
 #include <stdio.h>
 #include <stdlib.h>

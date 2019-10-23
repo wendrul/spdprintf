@@ -24,8 +24,7 @@ int	ft_format_is_valid(char *str){
 			str[2] == '\t' ||
 			str[2] == '\n' ||
 			str[2] == '\r' ||
-			str[2] == '\v' ||
-		   )
+			str[2] == '\v')
 		{
 			return 1;
 		}

@@ -11,6 +11,7 @@ int	spdprintf(char *format, char *dest, ...);
 int	ft_strlen(char *str);
 int	ft_putstr(char *str);
 int	ft_format_is_valid(char *str);
+int	ft_count_args(char *format);
 
 # define MODIFIED_BY_SCRIPT 0
 
