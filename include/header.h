@@ -10,6 +10,7 @@
 int	spdprintf(char *format, char *dest, ...);
 int	ft_strlen(char *str);
 int	ft_putstr(char *str);
+int	ft_format_is_valid(char *str);
 
 # define MODIFIED_BY_SCRIPT 0
 

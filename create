@@ -3,21 +3,7 @@
 echo "Name of the file? (without file extension)"
 
 read name
-
-cd include
-
-cat header.h | head -n -4					>  tmp
-cat tmp								>  header.h
-rm tmp
-echo "int	ft_${name}(/*please fill in the arguments*/);"	>> header.h
-echo ""								>> header.h
-echo "# define MODIFIED_BY_SCRIPT 1"				>> header.h
-echo ""								>> header.h
-echo "#endif"							>> header.h
-
-echo "Succesfully updated header, don't forget to update the prototypes!"
-
-cd ../srcs
+cd srcs
 
 #cat $name.c			>> .$name.c.save 
 echo "/*******************************************************************" >> $name.c

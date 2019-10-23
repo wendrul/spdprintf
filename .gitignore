@@ -3,3 +3,5 @@
 .DS_Store
 *.save
 .gitignore
+*.o
+printf_test
