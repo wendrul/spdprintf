@@ -135,7 +135,7 @@ void	print_numbers(int nb);
 Voici les prototypes des fonctions a coder.
 
 #### Traiter des chaines de caracteres
-- [ ] Afficher une chaine de characteres et retourner la longueur de celle ci: **simple**
+- [x] Afficher une chaine de characteres et retourner la longueur de celle ci: **simple**
 ```c
 	int	ft_putstr(char *str);
 ```
@@ -168,11 +168,11 @@ Voici les prototypes des fonctions a coder.
 	char	*ft_itoa_base(int nb, char *base);
 ```
 #### Gerer l'argument de format
-- [ ] Lit une chaine de caracteres finalisee par un _whitespace_ commencant par `%` et verifie si c'est un format valide (i.e.: c'est un `%d`, `%x` elle retourne 1, si c'est `%lol` renvoie 0 car invalide): **simple**
+- [x] Lit une chaine de caracteres finalisee par un _whitespace_ commencant par `%` et verifie si c'est un format valide (i.e.: c'est un `%d`, `%x` elle retourne 1, si c'est `%lol` renvoie 0 car invalide): **simple**
 ```c
 	int	ft_format_is_valid();
 ```
-- [ ] Verifie le format pour chercher combien d'arguments va prendre la fonction, c'est a dire compte le nombre de `%qqchose` valides (ex: `%d` `%c`): **complexe**
+- [x] Verifie le format pour chercher combien d'arguments va prendre la fonction, c'est a dire compte le nombre de `%qqchose` valides (ex: `%d` `%c`): **complexe**
 ```c
 	int	ft_count_args(char *format);
 ```
