@@ -8,5 +8,6 @@ int	main()
 	/*
 	Tests
 	*/
+	printf("count args: %d", ft_count_args("%d    %x % % % xx %s %d\n"));
 	return (0);
 }

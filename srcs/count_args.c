@@ -14,6 +14,7 @@ int	ft_count_args(char *format)
 	{
 		if (ft_format_is_valid(format))
 			count++;
+		format++;
 	}
 	return (count);
 }
