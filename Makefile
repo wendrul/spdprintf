@@ -2,6 +2,7 @@ SRCS	=	srcs/strlen.c\
 		srcs/putstr.c\
 		srcs/format_is_valid.c\
 		srcs/count_args.c\
+		srcs/spdprintf.c\
 		main.c
 
 OBJS	=	$(patsubst %.c, %.o, $(SRCS))

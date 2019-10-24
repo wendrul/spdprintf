@@ -8,6 +8,6 @@ int	main()
 	/*
 	Tests
 	*/
-	printf("count args: %d", ft_count_args("%d    %x % % % xx %s %d\n"));
+	printf("\ncount args: %d\n", spdprintf("nb1: %d   nb2: %d nb3: %d\n", 14, 750, 123));
 	return (0);
 }

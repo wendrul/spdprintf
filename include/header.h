@@ -7,7 +7,7 @@
 
 /* typedefs... */
 
-int	spdprintf(char *format, char *dest, ...);
+int	spdprintf(char *format, ...);
 int	ft_strlen(char *str);
 int	ft_putstr(char *str);
 int	ft_format_is_valid(char *str);
