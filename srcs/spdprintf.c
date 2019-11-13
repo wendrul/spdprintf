@@ -14,9 +14,10 @@ int	spdprintf(char *format, ...)
 
 	va_start(ap, format);
 	i = 0;
+	count = 0;
 	count_since = 0;
 	last = format;
-	while (format[i])
+	while (format[i] != '\0')
 	{
 		if (ft_format_is_valid(&format[i]))
 		{
@@ -25,25 +26,25 @@ int	spdprintf(char *format, ...)
 			count_since = 0;
 			/*NOMBRES ENTIERS*/
 			if (format[i + 1] == 'd')
-			{
-				/*Ici on utilise printf mais il faudra 
-				changer avec les fonctions respective.*/
-				count += printf("%d", va_arg(ap, int));
-				fflush(stdout);
-				/* cette ligne est a effacer une fois qu'on aura 
-				remplace le printf par la fonction correspondante*/
-			}
+				count += ft_putnbr(va_arg(ap, int)); 
+			
 			/* CARACTERE (CHAR) */
 			if (format[i + 1] == 'c')
 			{
-				count += printf("%c", va_arg(ap, int));
-				fflush(stdout);
+				ft_putchar(va_arg(ap, int));
+				count++;
 			}
 			/* STRINGS - CHAR* */
 			if (format[i + 1] == 's')
-			{
-
-			}
+				count += ft_putstr(va_arg(ap, char*));
+			
+			if (format[i + 1] == 'f')
+				ft_putdec(va_arg(ap, double));
+			
+			if (format[i + 1] == 'x')
+				ft_putnbr_base(va_arg(ap, int), "0123456789abcdef");
+			if (format[i + 1] == 'b')
+				ft_putnbr_base(va_arg(ap, int), "01");
 			i += 2;
 		}
 		else
@@ -51,5 +52,5 @@ int	spdprintf(char *format, ...)
 		i++;
 		count_since++;
 	}
-	return (0);
+	return (count);
 }
