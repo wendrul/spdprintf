@@ -147,7 +147,7 @@ Voici les prototypes des fonctions a coder.
 
 
 #### Afficher des nombres:
-- [ ] Afficher la representation decimale d'un nombre passe en argument: **plutot complexe**
+- [x] Afficher la representation decimale d'un nombre passe en argument: **plutot complexe**
 ```c
 	void	ft_putnbr(int nb);
 ```
@@ -155,11 +155,11 @@ Voici les prototypes des fonctions a coder.
 ```c
 	char	*ft_itoa(int nb);
 ```
-  - [ ] cherche un caractere `to_find` dans la chaine de caracteres `str` et renvoie l'indice de sa premiere occurrence ou -1 si il ne le trouve pas: **semi-complexe**
+  - [x] cherche un caractere `to_find` dans la chaine de caracteres `str` et renvoie l'indice de sa premiere occurrence ou -1 si il ne le trouve pas: **semi-complexe**
 ```c
 	int	ft_indexof(char to_find, char *str);
 ```
-  - [ ] Afficehr sur la sortie standard la representation du nombre en entree `nb` dans la base `base`. Par exemple pour l'hexadecimal `base = "0123456789abcdef"` pour le binaire `base = "01"` etc... : **tres complexe**
+  - [x] Afficehr sur la sortie standard la representation du nombre en entree `nb` dans la base `base`. Par exemple pour l'hexadecimal `base = "0123456789abcdef"` pour le binaire `base = "01"` etc... : **tres complexe**
 ```c
 	void	ft_putnbr_base(long nb, char *base, char *s);	//par ex base = "0123456789abcdef"
 ```
